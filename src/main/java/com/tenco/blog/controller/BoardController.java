@@ -42,7 +42,7 @@ public class BoardController {
     @GetMapping("/board/saveForm")
     public String saveForm() {
 
-        return "board/saveForm";
+        return "/";
     }
 
     @GetMapping("/board/{id}/updateForm")
