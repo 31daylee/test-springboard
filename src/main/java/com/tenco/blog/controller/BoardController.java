@@ -41,7 +41,6 @@ public class BoardController {
 
     @GetMapping("/board/saveForm")
     public String saveForm() {
-
         return "/";
     }
 
@@ -67,7 +66,6 @@ public class BoardController {
 
     @PostMapping("/board/{id}/delete")
     public String delete(@PathVariable Long id){
-
         boardService.deleteBoard(id);
         return "redirect:/";
     }
